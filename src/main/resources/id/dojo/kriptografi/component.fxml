@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="85.0" prefWidth="313.0" style="-fx-background-color: #101010FF; -fx-border-radius: 5em;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.dojo.kriptografi.ItemController">
+   <children>
+      <Label fx:id="method" layoutX="19.0" layoutY="12.0" text="Vigenere" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="preview" layoutX="20.0" layoutY="48.0" text="Ciphertext / Plaintext" textFill="#a8a3a3">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

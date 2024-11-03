@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.dojo.kriptografi.HelloController">
+   <children>
+      <BorderPane prefHeight="718.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox prefHeight="718.0" prefWidth="598.0" style="-fx-background-color: #101010FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="paneadd" prefHeight="718.0" prefWidth="608.0">
+                     <children>
+                        <Label fx:id="textMethod" layoutX="69.0" layoutY="32.0" prefHeight="35.0" prefWidth="228.0" text="Vigenere Cipher" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Line endX="352.5" layoutX="195.5" layoutY="413.5" startX="-136.0" stroke="#303230" />
+                        <Label layoutX="70.0" layoutY="167.0" prefHeight="25.0" prefWidth="170.0" text="Enkripsi : " textFill="#aeaeae">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="281.0" prefHeight="25.0" prefWidth="170.0" text="Dekripsi :" textFill="#aeaeae">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="plaintext" layoutX="62.0" layoutY="209.0" prefHeight="61.0" prefWidth="480.0" promptText="Plaintext" style="-fx-background-color: #303230;" styleClass="textf">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="ciphertext" layoutX="63.0" layoutY="322.0" prefHeight="61.0" prefWidth="480.0" promptText="Ciphertext" style="-fx-background-color: #303230;" styleClass="textf">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="key" layoutX="64.0" layoutY="92.0" prefHeight="61.0" prefWidth="480.0" promptText="Key" style="-fx-background-color: #303230;" styleClass="textf">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="textlogo11" layoutX="70.0" layoutY="428.0" prefHeight="35.0" prefWidth="228.0" text="Hasil " textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="save" layoutX="385.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: #303250;">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-submit-58.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="70.0" layoutY="469.0" prefHeight="25.0" prefWidth="170.0" text="Hasil Dekripsi :" textFill="#aeaeae">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="579.0" prefHeight="25.0" prefWidth="170.0" text="Hasil Enkripsi :" textFill="#aeaeae">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="hasildekrip" layoutX="68.0" layoutY="507.0" prefHeight="61.0" prefWidth="480.0" promptText="Hasil Dekripsi" style="-fx-background-color: #303230;" styleClass="textf">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="hasilenkrip" layoutX="67.0" layoutY="618.0" prefHeight="61.0" prefWidth="480.0" promptText="Hasil Enkripsi" style="-fx-background-color: #303230;" styleClass="textf">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="id" layoutX="402.0" layoutY="437.0" opacity="0.0" />
+                        <Button fx:id="itemBaru" layoutX="300.0" layoutY="23.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="66.0" style="-fx-background-color: #303250;">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-clear-30.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets right="100.0" />
+                     </padding>
+                  </Pane>
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <VBox prefHeight="718.0" prefWidth="317.0" style="-fx-background-color: #303230FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="170.0" text="Label">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="123.0" prefHeight="58.0" prefWidth="238.0" text="Kriptografi Klasik" textFill="WHITE">
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="vigenere" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="325.0" text="Vigenere" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../account/src/main/resources/icons/icons8-all-58.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="caesar" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="314.0" text="Caesar" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../account/src/main/resources/icons/icons8-favourite-30.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label prefHeight="58.0" prefWidth="210.0" text="Kriptografi Modern" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="blockecb" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="330.0" text="Block ECB Cipher" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../account/src/main/resources/icons/icons8-card-30.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="rc4" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="99.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="324.0" text="RC4" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../account/src/main/resources/icons/icons8-key-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label layoutX="15.0" layoutY="99.0" prefHeight="55.0" prefWidth="204.0" text="Kriptografi Super" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="superenkrip" alignment="BASELINE_LEFT" layoutX="15.0" layoutY="127.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="320.0" text="Super Enkripsi" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../account/src/main/resources/icons/icons8-folder-30.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" style="-fx-border-insets: 0 , 0, 0, 0;" styleClass="trans" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vitems" minWidth="271.0" prefHeight="464.0" style="-fx-background-color: #101010FF;" />
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+1. pastikan anda sudah memiliki JDK minimal versi 22
+2. download JavaFX https://gluonhq.com/products/javafx/, cukup downlaod dan ekstrak saja
+3. masuk kedalam folder target pada projek ini, dimana ada file Kriptografi-1.0-SNAPSHOT.jar , kemudian buka terminal
+4. jalankan perintah berikut ini 
+
+java -jar --module-path [absolute path folder javafx yang sudah diekstrak ditambah /lib] --add-modules javafx.controls,javafx.fxml [absolute path dari file Kriptografi-1.0-SNAPSHOT.jar, jangan lupa sertakan Kriptografi-1.0-SNAPSHOT.jar ]
+
+contoh
+
+java -jar --module-path /home/zachry/Documents/Program/openjfx-21.0.4_linux-x64_bin-sdk/javafx-sdk-21.0.4/lib --add-modules javafx.controls,javafx.fxml /home/zachry/Documents/Ngoding/Java/Kriptografi/target/Kriptografi-1.0-SNAPSHOT.jar 
+
